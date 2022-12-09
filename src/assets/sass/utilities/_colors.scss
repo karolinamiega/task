@@ -1,0 +1,69 @@
+//=================================================
+// Colors
+//=================================================
+
+/*=============================
+// Text white
+=============================*/
+.text-white {
+	color: $white;
+
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+	del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+	ol, ul, li, fieldset, legend, label, span, caption, figcaption, details, hgroup, summary, mark, audio, video {
+		&:not(.btn) {
+			color: inherit !important;
+		}
+	}
+
+	a {
+		&:not(.transform-scale-h):not(.btn) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.btn {
+		&.btn-link {
+			color: $white;
+		}
+	}
+
+	.blockquote, blockquote {
+		border-color: $white !important;
+	}
+}
+
+/*=============================
+// Text tertiary
+=============================*/
+.text-tertiary {
+	color: $body_text_tertiary_color;
+
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+	del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+	ol, ul, li, fieldset, legend, label, span, caption, figcaption, details, hgroup, summary, mark, audio, video {
+		&:not(.btn) {
+			color: inherit !important;
+		}
+	}
+
+	a {
+		&:not(.transform-scale-h):not(.btn) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.btn {
+		&.btn-link {
+			color: $body_text_tertiary_color;
+		}
+	}
+
+	.blockquote, blockquote {
+		border-color: $body_text_tertiary_color !important;
+	}
+}

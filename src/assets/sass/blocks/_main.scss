@@ -1,0 +1,29 @@
+//=================================================
+// Main
+//=================================================
+
+/*=============================
+// All page
+=============================*/
+main {
+    padding-top: $main_padding_t;
+    padding-bottom: $main_padding_b;
+
+    &.content-no-spacing {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        #page-content {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.content-top-spacing {
+    padding-top: $main_padding_t;
+}
+
+.content-bottom-spacing {
+    padding-bottom: $main_padding_b;
+}

@@ -1,0 +1,64 @@
+//=================================================
+// Old browser
+//=================================================
+
+#outdated {
+	display: none;
+	position: absolute;
+	background-color: #f25648;
+	color: white;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 1500;
+
+	&.fullscreen {
+		height: 100%;
+	}
+
+	.vertical-center {
+		@extend .wrapper;
+		position: relative;
+		padding-top: $header_padding_t;
+		padding-bottom: $header_padding_b;
+
+		p {
+			&.last {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 2.5rem;
+				height: 2.5rem;
+
+				&[dir=rtl] {
+					left: 0 !important;
+					right: auto !important;
+				}
+			}
+		}
+
+		#buttonUpdateBrowser {
+			@extend .btn;
+			@extend .btn-sm;
+			border: 1px solid white;
+			color: white;
+			cursor: pointer;
+			display: block;
+			margin: 1.278rem auto 0;
+			text-transform: uppercase;
+			position: relative;
+			width: 230px;
+		}
+
+		#buttonCloseUpdateBrowser {
+			font-size: 2rem;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}

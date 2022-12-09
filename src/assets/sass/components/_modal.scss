@@ -1,0 +1,59 @@
+//=================================================
+// Modal
+//=================================================
+
+.modal-backdrop {
+    min-width: 320px;
+}
+
+/*=============================
+// Modal title
+=============================*/
+.modal-title {
+    margin-bottom: 0 !important;
+}
+
+/*=============================
+// Modal size
+=============================*/
+.modal-full {
+    max-width: 100%;
+    margin: 0;
+}
+
+/*=============================
+// Modal header
+=============================*/
+.modal-header-top {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+/*=============================
+// Modal body
+=============================*/
+.modal-body-centered {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    padding: 0;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 100vh;
+    }
+}
+
+/*=============================
+// Modal menu
+=============================*/
+.modal#menu-modal {
+    .modal-body {
+        > * {
+            padding-top: $space_lg + 3.158rem;
+            padding-bottom: $space_lg;
+        }
+    }
+}

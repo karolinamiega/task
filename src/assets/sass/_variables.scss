@@ -1,0 +1,146 @@
+//=================================================
+// Variables
+//=================================================
+
+//=============================
+// Colors
+//=============================
+$white:                                                #ffffff;
+$blue:                                                 #4550bf;
+$indigo:                                               #6817c4;
+$purple:                                               #c41773;
+$pink:                                                 #d939c2;
+$red:                                                  #e84147;
+$orange:                                               #d9692e;
+$yellow:                                               #e8ce10;
+$green:                                                #2da16d;
+$teal:                                                 #44bca5;
+$cyan:                                                 #68ccfd;
+$gray:                                                 #eeeeee;
+
+$light:                                                #f8f8f8;
+$dark:                                                 #060606;
+
+// Body
+$body_text_primary_color:                              #747474;
+$body_text_secondary_color:                            #2b2b2b;
+$body_text_tertiary_color:                             #ffffff; // For dark background
+$body_headings_color:                                  #2b2b2b;
+$body_link_color:                                      #2b2b2b;
+$body_link_hover_color:                                #4550bf;
+$body_link_active_color:                               #4550bf;
+$body_border_color:                                    #dbdbdb;
+$body_background_color:                                #ffffff;
+
+$body_main_element_primary_color:                      #4550bf;
+$body_main_element_secondary_color:                    #2b2b2b;
+
+//=============================
+// Typography
+//=============================
+$UBUNTU:                                              'Ubuntu-Regular', sans-serif;
+$UBUNTU_b:                                            'Ubuntu-Bold', sans-serif;
+
+$font_primary:                                         $UBUNTU;
+$font_primary_bold:                                    $UBUNTU_b;
+
+$font_size_lg:                                         1rem;
+$font_size_md:                                         0.895rem;
+$font_size_sm:                                         0.789rem;
+
+// Body
+$body_font_size:                                       19px; // In pixels because rem should work
+
+// Base
+$base_font_family:                                     $font_primary;
+$base_font_weight:                                     400;
+$base_line_height:                                     1.79;
+$base_line_height_crop_before:                         0.80;
+$base_line_height_crop_after:                          0.65;
+
+$base_font_size:                                       1rem;
+$base_font_mb:                                         0.57rem;
+
+// Heading
+$headings_font_family:                                 $font_primary_bold;
+$headings_font_weight:                                 700;
+$headings_line_height:                                 1.31;
+$headings_line_height_crop_before:                     0.75;
+$headings_line_height_crop_after:                      0.75;
+
+$h1_font_size:                                         2.474rem;
+$h1_font_mb:                                           0.891rem;
+
+$h2_font_size:                                         2.053rem;
+$h2_font_mb:                                           0.708rem;
+
+$h3_font_size:                                         1.737rem;
+$h3_font_mb:                                           0.608rem;
+
+$h4_font_size:                                         1.421rem;
+$h4_font_mb:                                           0.519rem;
+
+$h5_font_size:                                         1.211rem;
+$h5_font_mb:                                           0.466rem;
+
+$h6_font_size:                                         1rem;
+$h6_font_mb:                                           0.43999999999999995rem;
+
+//=============================
+// Spacing
+//=============================
+$space_xl:                                             8.421rem;
+$space_lg:                                             3.158rem;
+$space_md:                                             2.632rem;
+$space_sm:                                             2.368rem;
+$space_xs:                                             1.579rem;
+
+// For page content
+$space_pc_primary:                                     3.158rem;
+$space_pc_secondary:                                   1.579rem;
+
+// Header
+$header_padding_t:                                     2.263rem;
+$header_padding_b:                                     2.263rem;
+
+// Main
+$main_padding_t:                                       $space_xl - $header_padding_t;
+$main_padding_b:                                       $space_xl - $header_padding_b;
+
+// Footer
+$footer_padding_t:                                     $space_lg;
+$footer_padding_b:                                     $space_lg;
+
+//=============================
+// Wrapper
+//=============================
+$wrapper_max_w:                                        1700px;
+
+// Left
+$wrapper_p_l:                                          2.632rem;
+$wrapper_p_l_xl:                                       1.59515rem;
+
+// Right
+$wrapper_p_r:                                          2.632rem;
+$wrapper_p_r_xl:                                       1.59515rem;
+
+//=============================
+// Transition
+//=============================
+$transition_s:                                         0.3s;
+
+//=============================
+// Media queries
+//=============================
+$retina:                                               "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$media_xxxl:                                           "(min-width: 1920px)";
+$media_xxl:                                            "(max-width: 1700px)";
+$media_xl:                                             "(max-width: 1199px)";
+$media_lg:                                             "(max-width: 991px)";
+$media_md:                                             "(max-width: 767px)";
+$media_sm:                                             "(max-width: 575px)";
+
+//=============================
+// Paths
+//=============================
+$fa-font-path:                                         "../fonts/FontAwesome";

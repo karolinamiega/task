@@ -1,0 +1,40 @@
+//=================================================
+// Mixins
+//=================================================
+
+//=============================
+// Line height crop
+//=============================
+// Before
+@mixin lhCrop-b($line-height, $capital-letter: 1) {
+    &:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        margin-top: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+    }
+}
+
+// After
+@mixin lhCrop-a($line-height, $capital-letter: 1) {
+    &:after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        margin-bottom: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+    }
+}
+
+//=============================
+// Gradient mixin
+//=============================
+@mixin css-gradient($from, $to) {
+    background-color: $from;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background-image: -webkit-linear-gradient(top, $from, $to);
+    background-image: -moz-linear-gradient(top, $from, $to);
+    background-image: -o-linear-gradient(top, $from, $to);
+    background-image: linear-gradient(to bottom, $from, $to);
+}

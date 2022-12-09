@@ -1,0 +1,26 @@
+//=================================================
+// Breadcrumb
+//=================================================
+
+.breadcrumb {
+	margin-left: 0;
+	margin-top: -$base_font_mb !important;
+	margin-bottom: -$base_font_mb !important;
+
+	.breadcrumb-item {
+		&:before {
+			margin-top: 0;
+			width: auto;
+			height: auto;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.breadcrumb-item {
+	text-transform: capitalize;
+	margin-bottom: 0 !important;
+}

@@ -1,0 +1,27 @@
+//=================================================
+// Widget
+//=================================================
+
+.widget-area {
+	@extend .style-default;
+}
+
+.widget-area, [class*='widget-container'] {
+	.widget {
+		position: relative;
+		border: 1px solid $body_border_color;
+		padding: 2.105rem;
+		margin-bottom: $space_md;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		// Widget title
+		.widget-title {
+			font-family: $font_primary_bold;
+			font-weight: 700;
+			margin-bottom: $space_pc_secondary - $h5_font_mb !important;
+		}
+	}
+}

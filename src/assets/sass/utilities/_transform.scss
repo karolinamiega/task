@@ -1,0 +1,17 @@
+//=================================================
+// Transform
+//=================================================
+
+/*=============================
+// Transform scale hover
+=============================*/
+.transform-scale-h {
+    @extend .transition-all;
+    display: inline-block;
+    transform: perspective(1px) scale(1) translateZ(0);
+    backface-visibility: hidden;
+    
+    &:hover {
+        transform: perspective(1px) scale(1.1) translateZ(0);
+    }
+}

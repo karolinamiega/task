@@ -1,0 +1,176 @@
+//=================================================
+// Forms
+//=================================================
+
+/*=============================
+// Label
+=============================*/
+label {
+    font-family: $font_primary_bold;
+    font-weight: 700;
+    font-size: $font_size_md;
+    line-height: $headings_line_height;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.before {
+        @include lhCrop-b($headings_line_height, $headings_line_height_crop_before);
+    }
+
+    &.after {
+        @include lhCrop-a($headings_line_height, $headings_line_height_crop_after);
+    }
+}
+
+label:not(.btn):not([class*='-label']) {
+    @include lhCrop-b($headings_line_height, $headings_line_height_crop_before);
+
+    &:last-child {
+        @include lhCrop-a($headings_line_height, $headings_line_height_crop_after);
+    }
+}
+
+.col-form-label {
+    &:not(.col-form-label-sm):not(.col-form-label-lg) {
+        font-size: $font_size_md;
+    }
+}
+
+/*=============================
+// Input, Select, Textarea
+=============================*/
+input[type="email"],
+input[type="password"], 
+input[type="search"],
+input[type="tel"],
+input[type="text"], 
+input[type="url"],
+input[type="file"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="time"],
+input[type="week"],
+select,
+textarea {
+    width: 100%;
+    border-radius: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input, textarea, select {
+    background-color: $input-bg;
+    color: $input-color;
+    font-family: $input-font-family;
+    font-weight: $input-font-weight;
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    padding: 0;
+    border: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    &:not([class*='form-control']):not([class*='custom-']) {
+        width: $custom-control-indicator-size;
+        height: $custom-control-indicator-size;
+        margin-right: $form-check-input-margin-x;
+    }
+}
+
+textarea {
+    display: block;
+    min-height: 200px;
+}
+
+select {
+    background: $custom-select-background;
+    appearance: none;
+
+    &[class*='-lg'] {
+        background-position: center right $input-padding-x-lg;
+    }
+
+    &[class*='-sm'] {
+        background-position: center right $input-padding-x-sm;
+    }
+}
+
+select[multiple] {
+    background: none !important;
+    background-color: $body_background_color !important;
+}
+
+form {
+    p {
+        &:before, &:after {
+            display: none;
+        }
+
+        &.before {
+            @include lhCrop-b($base_line_height, $base_line_height_crop_before);
+
+            &:last-child {
+                @include lhCrop-a($base_line_height, $base_line_height_crop_after);
+            }
+        }
+
+        &.after {
+            @include lhCrop-a($base_line_height, $base_line_height_crop_after);
+        }
+    }
+}
+
+/*=============================
+// Custom form
+=============================*/
+.custom-control {
+    &:not(.custom-switch) {
+        .custom-control-label {
+            &:after, &:before {
+                top: $form-check-input-margin-y;
+            }
+        }
+    }
+}
+
+.custom-file,
+.custom-file-input {
+    font-size: $font_size_md;
+}
+
+/*=============================
+// Form group
+=============================*/
+.form-group {
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &-xl {
+        margin-bottom: $space_xl;
+    }
+
+    &-lg {
+        margin-bottom: $space_lg;
+    }
+
+    &-md {
+        margin-bottom: $space_md;
+    }
+
+    &-sm {
+        margin-bottom: $space_sm;
+    }
+
+    &-xs {
+        margin-bottom: $space_xs;
+    }
+}

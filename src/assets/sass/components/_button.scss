@@ -1,0 +1,41 @@
+//=================================================
+// Buttons
+//=================================================
+
+button {
+	&:focus {
+		outline: 0;
+	}
+}
+
+/*=============================
+// Button
+=============================*/
+.btn {
+	min-width: 11.053rem;
+
+	&.btn-sm {
+		min-width: 6.158rem;
+	}
+
+	&.btn-lg {
+		min-width: 12.632rem;
+	}
+
+	&.before {
+		@include lhCrop-b($btn-line-height, $base_line_height_crop_before);
+	}
+
+	&.after {
+		@include lhCrop-a($btn-line-height, $base_line_height_crop_after);
+	}
+}
+
+/*=============================
+// Button group
+=============================*/
+.btn-group {
+	.btn {
+		min-width: auto;
+	}
+}

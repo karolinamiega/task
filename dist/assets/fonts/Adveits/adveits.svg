@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="adveits" horiz-adv-x="1000" >
+<font-face font-family="adveits" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="adv-adveits" unicode="&#xe806;" d="M496 395l-120-50 61-24v-100l-183 74 0 0 0 0v100 1l-2-1 244 100v-100z m251 23l-184 74v-100l58-24-125-50v-100l248 99h3l0 0v101l0 0h0z m242 33v-199l0 0v-200l0 0v-200l-167 69v62l-321-133-490 197 0 0v603h4l486 200 321-131v62l167 69v-200l0 0v-199l0 0z m-167 68l-324 131-337-136v-325l337-136 324 130v336z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

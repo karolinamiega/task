@@ -1,0 +1,596 @@
+/*=================================================
+// Style
+//
+// @package ProjectName
+// @author  Adveits <support@adveits.com>
+// @version 1.0.0
+=================================================*/
+
+//=================================================
+// Theme variables
+//=================================================
+// Variables
+@import "variables";
+
+//=================================================
+// Theme mixins
+//=================================================
+// Mixins
+@import "mixins";
+
+/*=================================================
+// Table of contents
+//
+// #1 Icons import ( FontAwesome )
+//
+// #2 Bootstrap settings
+// #2.1 Style reboot
+// #2.2 Root
+// #2.3 Type
+// #2.4 Images
+// #2.5 Code
+// #2.6 Grid
+// #2.7 Tables
+// #2.8 Forms
+// #2.9 Buttons
+// #2.10 Transitions
+// #2.11 Dropdown
+// #2.12 Button group
+// #2.13 Input group
+// #2.14 Custom forms
+// #2.15 Nav
+// #2.16 Navbar
+// #2.17 Card
+// #2.18 Breadcrumb
+// #2.19 Pagination
+// #2.20 Badge
+// #2.21 Jumbotron
+// #2.22 Alert
+// #2.23 Progress
+// #2.24 Media
+// #2.25 List group
+// #2.26 Close
+// #2.27 Toasts
+// #2.28 Modal
+// #2.29 Tooltip
+// #2.30 Popover
+// #2.31 Carousel
+// #2.32 Spinners
+// #2.33 Utilities
+//
+// #3 Theme default style
+// #3.1 Font
+//
+// #4 Theme layout
+// #4.1 Grid
+//
+// #5 Theme content
+// #5.1 Typography
+// #5.2 Images
+// #5.3 Icons
+// #5.4 Tables
+// #5.5 Figures
+//
+// #6 Theme components
+// #6.1 Alert
+// #6.2 Breadcrumb
+// #6.3 Button
+// #6.4 Card
+// #6.5 Collapse
+// #6.6 Dropdown
+// #6.7 Input group
+// #6.8 Forms
+// #6.9 List group
+// #6.10 Modal
+// #6.11 Nav
+// #6.12 Navbar
+// #6.13 Pagination
+// #6.14 Carousel
+// #6.15 Scrollbar
+//
+// #7 Theme utilities
+// #7.1 Colors
+// #7.2 Iframe
+// #7.3 Overflow
+// #7.4 Sizing
+// #7.5 Spacing
+// #7.6 Transition
+// #7.7 Transform
+//
+// #8 Theme blocks
+// #8.1 Header
+// #8.2 Footer
+// #8.3 Main
+// #8.4 Page title
+// #8.5 Page content
+// #8.6 Widget
+// #8.7 Loading
+// #8.8 Old browser
+// #8.9 UI
+//
+// #9 Animate
+//
+// DEV
+=================================================*/
+
+/*=================================================
+// #1 Icons import ( FontAwesome )
+=================================================*/
+@import "fontawesome/fontawesome";
+@import "fontawesome/regular";
+@import "fontawesome/brands";
+@import "fontawesome/solid";
+
+/*=================================================
+// #2 Bootstrap settings
+=================================================*/
+/*=============================
+// #2.1 Style reboot
+=============================*/
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "bootstrap-style-rewrite";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/reboot";
+
+/*=============================
+// #2.2 Root
+=============================*/
+@import "../../../node_modules/bootstrap/scss/root";
+
+/*=============================
+// #2.3 Type
+=============================*/
+@import "../../../node_modules/bootstrap/scss/type";
+
+/*=============================
+// #2.4 Images
+=============================*/
+@import "../../../node_modules/bootstrap/scss/images";
+
+/*=============================
+// #2.5 Code
+=============================*/
+@import "../../../node_modules/bootstrap/scss/code";
+
+/*=============================
+// #2.6 Grid
+=============================*/
+@import "../../../node_modules/bootstrap/scss/grid";
+
+/*=============================
+// #2.7 Tables
+=============================*/
+@import "../../../node_modules/bootstrap/scss/tables";
+
+/*=============================
+// #2.8 Forms
+=============================*/
+@import "../../../node_modules/bootstrap/scss/forms";
+
+/*=============================
+// #2.9 Buttons
+=============================*/
+@import "../../../node_modules/bootstrap/scss/buttons";
+
+/*=============================
+// #2.10 Transitions
+=============================*/
+@import "../../../node_modules/bootstrap/scss/transitions";
+
+/*=============================
+// #2.11 Dropdown
+=============================*/
+@import "../../../node_modules/bootstrap/scss/dropdown";
+
+/*=============================
+// #2.12 Button group
+=============================*/
+@import "../../../node_modules/bootstrap/scss/button-group";
+
+/*=============================
+// #2.13 Input group
+=============================*/
+@import "../../../node_modules/bootstrap/scss/input-group";
+
+/*=============================
+// #2.14 Custom forms
+=============================*/
+@import "../../../node_modules/bootstrap/scss/custom-forms";
+
+/*=============================
+// #2.15 Nav
+=============================*/
+@import "../../../node_modules/bootstrap/scss/nav";
+
+/*=============================
+// #2.16 Navbar
+=============================*/
+@import "../../../node_modules/bootstrap/scss/navbar";
+
+/*=============================
+// #2.17 Card
+=============================*/
+@import "../../../node_modules/bootstrap/scss/card";
+
+/*=============================
+// #2.18 Breadcrumb
+=============================*/
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+
+/*=============================
+// #2.19 Pagination
+=============================*/
+@import "../../../node_modules/bootstrap/scss/pagination";
+
+/*=============================
+// #2.20 Badge
+=============================*/
+@import "../../../node_modules/bootstrap/scss/badge";
+
+/*=============================
+// #2.21 Jumbotron
+=============================*/
+@import "../../../node_modules/bootstrap/scss/jumbotron";
+
+/*=============================
+// #2.22 Alert
+=============================*/
+@import "../../../node_modules/bootstrap/scss/alert";
+
+/*=============================
+// #2.23 Progress
+=============================*/
+@import "../../../node_modules/bootstrap/scss/progress";
+
+/*=============================
+// #2.24 Media
+=============================*/
+@import "../../../node_modules/bootstrap/scss/media";
+
+/*=============================
+// #2.25 List group
+=============================*/
+@import "../../../node_modules/bootstrap/scss/list-group";
+
+/*=============================
+// #2.26 Close
+=============================*/
+@import "../../../node_modules/bootstrap/scss/close";
+
+/*=============================
+// #2.27 Toasts
+=============================*/
+@import "../../../node_modules/bootstrap/scss/toasts";
+
+/*=============================
+// #2.28 Modal
+=============================*/
+@import "../../../node_modules/bootstrap/scss/modal";
+
+/*=============================
+// #2.29 Tooltip
+=============================*/
+@import "../../../node_modules/bootstrap/scss/tooltip";
+
+/*=============================
+// #2.30 Popover
+=============================*/
+@import "../../../node_modules/bootstrap/scss/popover";
+
+/*=============================
+// #2.31 Carousel
+=============================*/
+@import "../../../node_modules/bootstrap/scss/carousel";
+
+/*=============================
+// #2.32 Spinners
+=============================*/
+@import "../../../node_modules/bootstrap/scss/spinners";
+
+/*=============================
+// #2.33 Utilities
+=============================*/
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+/*=================================================
+// #3 Theme default style
+=================================================*/
+html {
+	-webkit-overflow-scrolling: touch;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: $body_font_size;
+	scroll-behavior: smooth;
+
+	@media #{$media_xxl} {
+		font-size: $body_font_size - 2;
+	}
+
+	@media #{$media_xl} {
+		font-size: $body_font_size - 3;
+	}
+
+	@media #{$media_lg} {
+		font-size: $body_font_size - 4;
+	}
+
+	@media #{$media_md} {
+		font-size: $body_font_size - 5;
+	}
+}
+
+body {
+	background-color: $body_background_color;
+	font-size: $body_font_size;
+	min-width: 320px;
+
+	@media #{$media_xxl} {
+		font-size: $body_font_size - 2;
+	}
+
+	@media #{$media_xl} {
+		font-size: $body_font_size - 3;
+	}
+
+	@media #{$media_lg} {
+		font-size: $body_font_size - 4;
+	}
+
+	@media #{$media_md} {
+		font-size: $body_font_size - 5;
+	}
+}
+
+::selection {
+	background: $body_main_element_primary_color;
+	color: color-yiq($body_main_element_primary_color);
+}
+
+.wrapper {
+	max-width: $wrapper_max_w;
+	margin: auto;
+	padding-left: $wrapper_p_l;
+	padding-right: $wrapper_p_r;
+
+	@media #{$media_xl} {
+		padding-left: $wrapper_p_l_xl;
+		padding-right: $wrapper_p_r_xl;
+	}
+}
+
+@media #{$media_md} {
+	#main {
+		.wrapper {
+			max-width: 450px;
+		}
+
+		.wrapper-normal {
+			.wrapper {
+				max-width: $wrapper_max_w;
+			}
+		}
+	}
+}
+
+/*=============================
+// #3.1 Font
+=============================*/
+@import "font";
+
+/*=================================================
+// #4 Theme layout
+=================================================*/
+/*=============================
+// #4.1 Grid
+=============================*/
+@import "layout/grid";
+
+/*=================================================
+// #5 Theme content
+=================================================*/
+/*=============================
+// #5.1 Typography
+=============================*/
+@import "content/typography";
+
+/*=============================
+// #5.2 Images
+=============================*/
+@import "content/images";
+
+/*=============================
+// #5.3 Icons
+=============================*/
+@import "content/icons";
+
+/*=============================
+// #5.4 Tables
+=============================*/
+@import "content/tables";
+
+/*=============================
+// #5.5 Figures
+=============================*/
+@import "content/figures";
+
+/*=================================================
+// #6 Theme components
+=================================================*/
+/*=============================
+// #6.1 Alert
+=============================*/
+@import "components/alert";
+
+/*=============================
+// #6.2 Breadcrumb
+=============================*/
+@import "components/breadcrumb";
+
+/*=============================
+// #6.3 Button
+=============================*/
+@import "components/button";
+
+/*=============================
+// #6.4 Card
+=============================*/
+@import "components/card";
+
+/*=============================
+// #6.5 Collapse
+=============================*/
+@import "components/collapse";
+
+/*=============================
+// #6.6 Dropdown
+=============================*/
+@import "components/dropdown";
+
+/*=============================
+// #6.7 Input group
+=============================*/
+@import "components/input-group";
+
+/*=============================
+// #6.8 Forms
+=============================*/
+@import "components/forms";
+
+/*=============================
+// #6.9 List group
+=============================*/
+@import "components/list-group";
+
+/*=============================
+// #6.10 Modal
+=============================*/
+@import "components/modal";
+
+/*=============================
+// #6.11 Nav
+=============================*/
+@import "components/nav";
+
+/*=============================
+// #6.12 Navbar
+=============================*/
+@import "components/navbar";
+
+/*=============================
+// #6.13 Pagination
+=============================*/
+@import "components/pagination";
+
+/*=============================
+// #6.14 Carousel
+=============================*/
+@import "components/carousel";
+
+/*=============================
+// #6.15 Scrollbar
+=============================*/
+@import "components/scrollbar";
+
+/*=================================================
+// #7 Theme utilities
+=================================================*/
+/*=============================
+// #7.1 Colors
+=============================*/
+@import "utilities/colors";
+
+/*=============================
+// #7.2 Iframe
+=============================*/
+@import "utilities/iframe";
+
+/*=============================
+// #7.3 Overflow
+=============================*/
+@import "utilities/overflow";
+
+/*=============================
+// #7.4 Sizing
+=============================*/
+@import "utilities/sizing";
+
+/*=============================
+// #7.5 Spacing
+=============================*/
+@import "utilities/spacing";
+
+/*=============================
+// #7.6 Transition
+=============================*/
+@import "utilities/transition";
+
+/*=============================
+// #7.7 Transform
+=============================*/
+@import "utilities/transform";
+
+/*=================================================
+// #8 Theme blocks
+=================================================*/
+/*=============================
+// #8.1 Header
+=============================*/
+@import "blocks/header";
+
+/*=============================
+// #8.2 Footer
+=============================*/
+@import "blocks/footer";
+
+/*=============================
+// #8.3 Main
+=============================*/
+@import "blocks/main";
+
+/*=============================
+// #8.4 Page title
+=============================*/
+@import "blocks/page-title";
+
+/*=============================
+// #8.5 Page content
+=============================*/
+@import "blocks/page-content";
+
+/*=============================
+// #8.6 Widget
+=============================*/
+@import "blocks/widget";
+
+/*=============================
+// #8.7 Loading
+=============================*/
+@import "blocks/loading";
+
+/*=============================
+// #8.8 Old browser
+=============================*/
+@import "blocks/old-browser";
+
+/*=============================
+// #8.9 UI
+=============================*/
+@import "blocks/ui";
+
+/*=================================================
+// #9 Animate
+=================================================*/
+@import "../../../node_modules/animate.css/animate";
+
+//=================================================
+// DEV
+//=================================================
+//body {
+//	background-image: url(../img/bg/dev.png);
+//	background-attachment: fixed;
+//	background-repeat: repeat-y;
+//	background-position: center;
+//}

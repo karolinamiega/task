@@ -1,0 +1,151 @@
+//=================================================
+// Page content
+//=================================================
+
+#page-content {
+	.content {
+		h1 {
+			margin-bottom: $space_pc_primary - $h1_font_mb;
+		}
+
+		h2 {
+			margin-bottom: $space_pc_primary - $h2_font_mb;
+		}
+
+		h3 {
+			margin-bottom: $space_pc_primary - $h3_font_mb;
+		}
+
+		h4 {
+			margin-bottom: $space_pc_primary - $h4_font_mb;
+		}
+
+		h5 {
+			margin-bottom: $space_pc_primary - $h5_font_mb;
+		}
+
+		h6 {
+			margin-bottom: $space_pc_primary - $h6_font_mb;
+		}
+
+		p {
+			margin-bottom: $space_pc_primary - $base_font_mb;
+		}
+
+		h1, h2, h3, h4, h5, h6, p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:not(.card-title) {
+				&[class*='-title'], &[class*='__title'], &[class*='-heading'], &[class*='__heading'] {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		figure {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		table {
+			width: 100%;
+			margin-bottom: $space_pc_primary;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		ul, ol {
+			li:not([class*='-item']) {
+				margin-bottom: $space_pc_secondary - $base_font_mb;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			ol, ul {
+				margin-top: $space_pc_secondary - $base_font_mb;
+			}
+		}
+
+		address, dl, ol, ul, pre, hr, blockquote, .blockquote {
+			margin-bottom: $space_pc_primary;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		// Style default from typography.scss
+		.style-default {
+			h1 {
+				margin-bottom: $space_pc_secondary - $h1_font_mb;
+			}
+
+			h2 {
+				margin-bottom: $space_pc_secondary - $h2_font_mb;
+			}
+
+			h3 {
+				margin-bottom: $space_pc_secondary - $h3_font_mb;
+			}
+
+			h4 {
+				margin-bottom: $space_pc_secondary - $h4_font_mb;
+			}
+
+			h5 {
+				margin-bottom: $space_pc_secondary - $h5_font_mb;
+			}
+
+			h6 {
+				margin-bottom: $space_pc_secondary - $h6_font_mb;
+			}
+
+			p {
+				margin-bottom: $space_pc_secondary - $base_font_mb;
+			}
+
+			h1, h2, h3, h4, h5, h6, p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			table {
+				margin-bottom: $space_pc_secondary;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			ul, ol {
+				li:not([class*='-item']) {
+					margin-bottom: $space_pc_secondary - $base_font_mb;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				ol, ul {
+					margin-top: $space_pc_secondary - $base_font_mb;
+				}
+			}
+
+			address, dl, ol, ul, pre, hr, blockquote, .blockquote {
+				margin-bottom: $space_pc_secondary;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

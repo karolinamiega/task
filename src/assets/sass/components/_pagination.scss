@@ -1,0 +1,26 @@
+//=================================================
+// Pagination
+//=================================================
+
+.pagination {
+    margin-top: $space_pc_primary;
+    margin-left: 0;
+    border-radius: 0 !important;
+    
+    &:first-child {
+        margin-top: 0;
+    }
+
+    .page-item, .post-page-numbers {
+        margin-bottom: 0;
+
+        &:before, &:after {
+            display: none;
+        }
+
+        .page-link {
+            border-radius: 0 !important;
+            @extend .transition-all;
+        }
+    }
+}

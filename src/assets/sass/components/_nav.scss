@@ -1,0 +1,110 @@
+//=================================================
+// Nav
+//=================================================
+
+.nav {
+	font-size: $font_size_md;
+	@extend .list-unstyled;
+
+	li {
+		margin-bottom: 0;
+	}
+
+	// Nav item
+	.nav-item {
+		font-family: $font_primary_bold;
+		font-weight: 700;
+
+		> a:not(.disabled):not(.active) {
+			color: $body_link_color;
+		}
+
+		// Hover
+		&:hover {
+			> a:not(.disabled):not(.active) {
+				color: $body_link_hover_color;
+			}
+		}
+
+		// Active
+		&.current-nav-item, &.active {
+			> a:not(.disabled) {
+				font-family: $font_primary_bold;
+				font-weight: 700;
+				color: $body_link_active_color;
+			}
+
+			> .dropdown-icon {
+				[class*='fa-'] {
+					color: $body_link_hover_color;
+				}
+			}
+		}
+	}
+
+	// Nav link
+	&:not(.nav-pills) {
+		.nav-link {
+			font-family: $font_primary_bold;
+			font-weight: 700;
+
+			&:not(.disabled) {
+				color: $body_link_color;
+
+				&:hover {
+					color: $body_link_hover_color;
+				}
+
+				&.active {
+					color: $body_link_active_color;
+				}
+			}
+		}
+	}
+
+	// Nav pills
+	&.nav-pills {
+		.nav-link {
+			&:not(.disabled):not(.active):not(.is-active) {
+				color: $body_link_color;
+
+				&:hover {
+					color: $nav-pills-link-active-color;
+					background-color: $nav-pills-link-active-bg;
+				}
+			}
+
+			&.active, &.is-active {
+				color: $nav-pills-link-active-color;
+				background-color: $nav-pills-link-active-bg;
+			}
+		}
+
+		.show {
+			.nav-link {
+				&:not(.disabled):not(.active):not(.is-active) {
+					color: $nav-pills-link-active-color;
+				}
+			}
+		}
+
+		li {
+			line-height: inherit;
+
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+
+	// Nav tabs
+	&.nav-tabs {
+		li {
+			line-height: inherit;
+
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+}

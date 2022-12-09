@@ -1,0 +1,13 @@
+//=================================================
+// Navbar
+//=================================================
+
+.navbar-nav {
+	font-size: $font_size_md;
+	@extend .list-unstyled;
+	margin-bottom: 0 !important;
+
+	li {
+		margin-bottom: 0;
+	}
+}

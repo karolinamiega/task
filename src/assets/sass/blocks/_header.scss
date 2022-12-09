@@ -1,0 +1,73 @@
+//=================================================
+// Header
+//=================================================
+
+$header_item_space: $space_xs;
+
+.site-header {
+	position: relative;
+
+	.wrapper {
+		background-color: $body_background_color;
+		padding-top: $header_padding_t;
+		padding-bottom: $header_padding_b;
+	}
+
+	.header-content {
+		.header-left {
+			.d-flex {
+				> * {
+					margin-right: $header_item_space;
+				}
+			}
+		}
+
+		.header-right {
+			.d-flex {
+				> * {
+					margin-right: $header_item_space;
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.logo {
+		img {
+			width: 6.579rem;
+		}
+	}
+}
+
+.modal-header {
+	.header-content {
+		.header-left {
+			.d-flex {
+				> * {
+					margin-right: $header_item_space;
+				}
+			}
+		}
+
+		.header-right {
+			.d-flex {
+				> * {
+					margin-right: $header_item_space;
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.logo {
+		img {
+			width: 6.579rem;
+		}
+	}
+}

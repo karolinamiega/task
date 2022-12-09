@@ -1,0 +1,154 @@
+//=================================================
+// Dropdown
+//=================================================
+
+/*=============================
+// Default
+=============================*/
+// Toggle
+.dropdown-toggle {
+	@extend .bold;
+
+	&:after, &:before {
+		transition: transform $transition_s ease;
+	}
+}
+
+.show {
+	> .dropdown-toggle {
+		&:after, &:before {
+			transform: rotate(-180deg);
+			transition: transform $transition_s ease;
+		}
+	}
+}
+
+// Hover
+.dropdown-hover {
+	position: relative;
+}
+
+// Click
+.dropdown-click {
+	position: relative;
+}
+
+// Menu
+.dropdown-menu {
+	margin-top: 0 !important;
+	background-clip: inherit;
+	line-height: normal;
+
+	li {
+		margin-bottom: 0 !important;
+		line-height: normal;
+
+		&:before, &:after {
+			display: none;
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.dropdown-toggle {
+		&:before, &:after {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: $dropdown-item-padding-x;
+		}
+
+		&.active {
+			&:before, &:after {
+				transform: translateY(-50%) rotate(-180deg);
+			}
+		}
+	}
+
+	.dropdown-icon {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: $dropdown-item-padding-x;
+	}
+}
+
+// Submenu
+.dropdown-submenu {
+	> .dropdown-custom-icon {
+		color: $dropdown-link-color;
+	}
+
+	.active-2 {
+		&.dropdown-custom-icon {
+			color: $dropdown-link-active-color;
+		}
+	}
+
+	&.show {
+		> .dropdown-custom-icon {
+			color: $dropdown-link-active-color;
+		}
+	}
+
+	> .dropdown-item {
+		@extend .bold;
+	}
+}
+
+// Header
+.dropdown-header {
+	margin-bottom: $dropdown-item-padding-y !important;
+}
+
+// Item
+.dropdown-item {
+	font-family: $font_primary_bold;
+	font-weight: 700;
+}
+
+/*=============================
+// Dropdown custom icon
+=============================*/
+.dropdown-icon {
+	cursor: pointer;
+	padding-left: $caret-spacing - 0.158rem;
+
+	[class*='fa-'] {
+		transition: transform $transition_s ease;
+	}
+}
+
+.dropdown-custom-icon {
+	cursor: pointer;
+
+	&.dropdown-toggle {
+		&:before, &:after {
+			display: none;
+		}
+	}
+
+	&.active {
+		> .dropdown-icon {
+			[class*='fa-'] {
+				transform: rotate(-180deg);
+				transition: transform $transition_s ease;
+			}
+		}
+	}
+}
+
+.show {
+	> .dropdown-custom-icon {
+		.dropdown-icon {
+			[class*='fa-'] {
+				transform: rotate(-180deg);
+				transition: transform $transition_s ease;
+			}
+		}
+	}
+}

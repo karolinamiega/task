@@ -1,0 +1,37 @@
+//=================================================
+// Tables
+//=================================================
+
+table {
+    width: 100%;
+    color: $table-color;
+    background-color: $table-bg;
+
+    th, td {
+        padding: $table-cell-padding;
+        border: $table-border-width solid $table-border-color;
+    }
+
+    th {
+        font-family: $font_primary_bold;
+        font-weight: 700;
+    }
+}
+
+/*=============================
+// Table sm
+=============================*/
+.table-sm {
+    font-size: $font_size_md;
+}
+
+/*=============================
+// Table hover
+=============================*/
+.table-hover {
+    tbody {
+        tr {
+            transition: background-color $transition_s ease;
+        }
+    }
+}

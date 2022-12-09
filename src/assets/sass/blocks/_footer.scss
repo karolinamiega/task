@@ -1,0 +1,48 @@
+//=================================================
+// Footer
+//=================================================
+
+$footer_item_space: $space_xs;
+
+.site-footer {
+    background-color: $body_background_color;
+
+    .wrapper {
+        position: relative;
+        padding-top: $footer_padding_t;
+        padding-bottom: $footer_padding_b;
+
+        .footer {
+            .d-flex {
+                > div {
+                    padding-left: $footer_item_space;
+                    padding-right: $footer_item_space;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+
+                    @media #{$media_md} {
+                        padding-left: 0;
+                        padding-right: 0;
+                        margin-bottom: $footer_item_space;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .copyright {
+                    @media #{$media_md} {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

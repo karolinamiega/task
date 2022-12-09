@@ -1,0 +1,35 @@
+//=================================================
+// Icons
+//=================================================
+
+/*=============================
+// Icon space
+=============================*/
+.icon-space {
+	&-l {
+		padding-left: 0.789rem;
+	}
+
+	&-r {
+		padding-right: 0.789rem;
+	}
+}
+
+/*=============================
+// Close
+=============================*/
+.close {
+	@extend .transition-all;
+	opacity: 1;
+
+	> span {
+		@include lhCrop-b(1, 0.55);
+		@include lhCrop-a(1, 0.55);
+	}
+
+	&:not(:disabled):not(.disabled) {
+		&:hover, &:focus {
+			opacity: 0.8;
+		}
+	}
+}
